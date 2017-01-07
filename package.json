@@ -1,0 +1,11 @@
+{
+  "name": "opendash-widget-hallo-welt",
+  "version": "1.0.0",
+  "author": "Entwickler Name <entwickler.name@opendash.de>",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "dist/widget.common.js",
+  "module": "dist/widget.module.js",
+  "dependencies": {
+  }
+}
