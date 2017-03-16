@@ -5,5 +5,6 @@ export default class WidgetController {
   constructor($adapter, $element, $scope, moment) {
 
     this.$adapter = $adapter;
+    this.ftgroup = 1000;
   }
 }
