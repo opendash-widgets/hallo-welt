@@ -6,11 +6,12 @@ var WidgetController = function WidgetController($adapter, $element, $scope, mom
   _classCallCheck(this, WidgetController);
 
   this.$adapter = $adapter;
+  this.ftgroup = 1000;
 };
 
 WidgetController.$inject = ['od.adapter.service', '$element', '$scope', 'moment'];
 
-var widgetTemplate = "<div style=\"text-align: center; padding: 10px; width: 100%; height: 100%;\">\n  <fit-text fttext=\"'Hallo'\" ftwidth=\"'100%'\" ftheight=\"'50%'\"></fit-text>\n  <fit-text fttext=\"$ctrl.config.name\" ftwidth=\"'100%'\" ftheight=\"'50%'\" style=\"font-weight: bold;\"></fit-text>\n</div>\n";
+var widgetTemplate = "<div style=\"text-align: center; padding: 10px; width: 100%; height: 100%;\">\r\n  <fit-text ftgroup=\"$ctrl.ftgroup\" fttext=\"'Hallo'\" ftwidth=\"'100%'\" ftheight=\"'50%'\"></fit-text>\r\n  <fit-text ftgroup=\"$ctrl.ftgroup\" fttext=\"$ctrl.config.name\" ftwidth=\"'100%'\" ftheight=\"'50%'\" style=\"font-weight: bold;\"></fit-text>\r\n</div>";
 
 var widgetStyle = "";
 
@@ -22,7 +23,7 @@ var SettingsController = function SettingsController() {
 
 SettingsController.$inject = [];
 
-var settingsTemplate = "<label for=\"widget-settings-name\">Hallo Welt Name</label>\n<input\n  name=\"widget-settings-name\"\n  type=\"text\"\n  placeholder=\"Name\"\n  ng-model=\"$ctrl.config.name\" />\n";
+var settingsTemplate = "<label for=\"widget-settings-name\">Hallo Welt Name</label>\r\n<input\r\n  name=\"widget-settings-name\"\r\n  type=\"text\"\r\n  placeholder=\"Name\"\r\n  ng-model=\"$ctrl.config.name\" />\r\n";
 
 var settingsStyle = "";
 
